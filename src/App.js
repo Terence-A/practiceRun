@@ -5,7 +5,7 @@ import Home from "./Components/Home/Home";
 import Menu from "./Components/Menu/Menu";
 import Events from "./Components/Events/Events";
 import AboutUs from "./Components/AboutUs/AboutUs";
-import Contact from "./Components/Contact/Contact";
+
 import Footer from "./Components/Footer/Footer";
 import SignIn from "./Components/SignIn/SignIn";
 
