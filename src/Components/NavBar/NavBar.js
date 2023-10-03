@@ -1,28 +1,42 @@
 import "./NavBar.css";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
+
   return (
     <div className="main-nav">
       <h1>Fact-V Tech Lounge</h1>
       <ul className="nav-list">
-        <li>
-          <a href="/">Home</a>
+        <li className={splitLocation[1] === "" ? "active" : ""}>
+          <Link to="/">
+            <p>Home</p>
+          </Link>
         </li>
-        <li>
-          <a href="/menu"> Menu</a>
+        <li className={splitLocation[1] === "menu" ? "active" : ""}>
+          <Link to="/menu">
+            <p>Menu</p>
+          </Link>
         </li>
-        <li>
-          <a href="/events"> Events</a>
+        <li className={splitLocation[1] === "events" ? "active" : ""}>
+          <Link to="/events">
+            <p>Events</p>
+          </Link>
         </li>
-        <li>
-          <a href="/about"> About Us</a>
+        <li className={splitLocation[1] === "about" ? "active" : ""}>
+          <Link to="/about">
+            <p>About</p>
+          </Link>
         </li>
       </ul>
       <ul className="contact-li">
         <li>
-          <a className="main-nav-btn" href="/signIn">
-            Sign In
-          </a>
+          <Link to="/signIn">
+            <p className="main-nav-btn">Sign In</p>
+          </Link>
         </li>
       </ul>
     </div>
