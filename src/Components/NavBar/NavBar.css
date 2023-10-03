@@ -1,0 +1,41 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  font-size: 1.5rem;
+}
+.nav-list li {
+  list-style: none;
+  color: #282888;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #282888;
+}
+.nav-list li a:hover {
+  color: #6b6bd4;
+}
+
+.main-nav-btn {
+  background-color: #282888;
+  padding: 13px 23px;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+}
+.main-nav-btn:hover {
+  transition: 0.2s;
+  background-color: #4141b4;
+  box-shadow: 0 0 5px 0 #282888;
+}
+.contact-li {
+  list-style: none;
+}
