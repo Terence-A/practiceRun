@@ -1,4 +1,3 @@
-import NavBar from "../NavBar/NavBar";
 import image from "../../images/pub.jpg";
 import cocktailNight from "../../images/cocktailNight.jpg";
 import serverSour from "../../images/serverSour.jpg";
