@@ -21,3 +21,51 @@ main {
 .active {
   font-weight: 900;
 }
+.aboutOffer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(70, 70, 128);
+  padding: 55px 0;
+  border-radius: 30px;
+  width: 95%;
+  margin: 0 auto;
+}
+.aboutTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 70px;
+}
+.sm-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 0 0 10px 0 black;
+  padding: 0 25px;
+  border-radius: 15px;
+  background-color: azure;
+}
+.sm-card h5 {
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(209, 198, 198);
+}
+.sm-card p {
+  font-size: 1.2rem;
+}
+.joinUs h4 {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(209, 198, 198);
+  width: 70%;
+  margin: 35px auto;
+}
+.joinUs p {
+  width: 60%;
+  font-size: 1.2rem;
+  margin: 0 auto 145px;
+}
+.about-foot {
+  text-align: center;
+  font-size: 1.8rem;
+  color: ;
+}
