@@ -39,3 +39,9 @@
   border: none;
   border-radius: 45px;
 }
+
+.purchaseTicket:hover {
+  cursor: pointer;
+  background-color: rgb(74, 99, 74);
+  box-shadow: 0 0 3px 0 green;
+}
