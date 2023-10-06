@@ -1,9 +1,14 @@
 import { Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./EventDetailsLayout.css";
 
 const EventDetailsLayout = (props) => {
+  const navigate = useNavigate();
   const { eventTitle, eventDescription, date, encodedEventImage } = useParams();
+  const onOrderHandler = () => {
+    navigate("/menu");
+  };
   return (
     <div className="eventDetailsLayout">
       <h2>Event Details</h2>
@@ -19,7 +24,9 @@ const EventDetailsLayout = (props) => {
           </div>
           <div className="large-card-btns">
             <button className="purchase-btn">Buy Tickets</button>
-            <button className="order-menu-btn">Order Menu</button>
+            <button className="order-menu-btn" onClick={onOrderHandler}>
+              Order Menu
+            </button>
           </div>
         </div>
       </div>
