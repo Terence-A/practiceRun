@@ -1,55 +1,57 @@
 import "./NavBar.css";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import myCart from "../../images/emptyCart.png";
 
 const NavBar = () => {
-  const location = useLocation();
-  const { pathname } = location;
-  const splitLocation = pathname.split("/");
-
   return (
-    <div className="main-nav">
-      <h1>Fact-V Tech Lounge</h1>
-      <ul className="nav-list">
-        <li className={splitLocation[1] === "" ? "active" : ""}>
-          <Link to="/">
-            <p>Home</p>
-          </Link>
-        </li>
-        <li className={splitLocation[1] === "menu" ? "active" : ""}>
-          <Link to="/menu">
-            <p>Menu</p>
-          </Link>
-        </li>
-        <li className={splitLocation[1] === "events" ? "active" : ""}>
-          <Link to="/events">
-            <p>Events</p>
-          </Link>
-        </li>
-        <li className={splitLocation[1] === "about" ? "active" : ""}>
-          <Link to="/about">
-            <p>About</p>
-          </Link>
-        </li>
-        <li className={splitLocation[1] === "contact" ? "active" : ""}>
-          <Link to="/contact">
-            <p>Contact</p>
-          </Link>
-        </li>
-      </ul>
-      <ul className="contact-li">
-        <li>
-          <Link to="/myCart">
-            <img src={myCart} alt="" />
-          </Link>
-        </li>
-        <li>
-          <Link to="/signIn">
-            <p className="main-nav-btn">Sign In</p>
-          </Link>
-        </li>
-      </ul>
+    <div className="nav-wrapper">
+      <div className="main-nav">
+        <h1>Fact-V Tech Lounge</h1>
+        <ul className="nav-list">
+          <li>
+            <NavLink to="/">
+              <p>Home</p>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/menu">
+              <p>Menu</p>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/events">
+              <p>Events</p>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">
+              <p>About</p>
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/contact">
+              <p>Contact</p>
+            </NavLink>
+          </li>
+        </ul>
+
+        <ul className="contact-li">
+          <li>
+            <Link to="/myCart">
+              <img src={myCart} alt="" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/signIn">
+              <p className="main-nav-btn">Sign In</p>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 };
