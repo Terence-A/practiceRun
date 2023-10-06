@@ -1,4 +1,3 @@
-import NavBar from "./Components/NavBar/NavBar";
 import "./App.css";
 import {
   createBrowserRouter,
@@ -15,7 +14,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import SignIn from "./Components/SignIn/SignIn";
-import EventDetails from "./Components/Events/EventDetails";
+// import EventDetails from "./Components/Events/EventDetails";
 
 //Layouts
 import RootLayout from "./Components/Layouts/RootLayout";
