@@ -18,6 +18,7 @@ import SignIn from "./Components/SignIn/SignIn";
 
 //Layouts
 import RootLayout from "./Components/Layouts/RootLayout";
+import EventDetailsLayout from "./Components/Layouts/eventDetailsLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,10 @@ const router = createBrowserRouter(
       <Route path="about" element={<AboutUs />} />
       <Route path="signIn" element={<SignIn />} />
       <Route path="contact" element={<Contact />} />
+      <Route
+        path="eventDetails/:eventId/:eventTitle/:eventDescription/:date"
+        element={<EventDetailsLayout />}
+      ></Route>
       {/* <Route path="eventDetails" element={<EventDetails />} /> */}
     </Route>
   )

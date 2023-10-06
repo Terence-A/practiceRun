@@ -4,7 +4,11 @@ import { useNavigate } from "react-router-dom";
 const EventsCard = (props) => {
   const navigate = useNavigate();
   const puchaseHandler = () => {
-    navigate(`/eventDetails/${props.eventId}`);
+    console.log(props.eventId, props.eventTitle);
+    // navigate("/eventDetails");
+    navigate(
+      `/eventDetails/${props.eventId}/${props.eventTitle}/${props.eventDescription}/${props.date}`
+    );
   };
 
   return (

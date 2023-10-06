@@ -6,8 +6,10 @@ const EventDetails = (props) => {
 
   return (
     <div>
-      <h2>Event Details</h2>
-      {/* <p>Event ID: {eventId}</p> */}
+      {/* <h2>Event Details</h2> */}
+      <h3>{props.eventId}</h3>
+      <p>Event ID: {eventId}</p>
+
       {/* Display other event details based on the fetched data */}
     </div>
   );
