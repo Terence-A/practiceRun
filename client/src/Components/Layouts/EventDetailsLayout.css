@@ -1,0 +1,65 @@
+.eventDetailsLayout h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.largeCard {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 85px 10px 65px;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+}
+.largeCard img {
+  width: 55%;
+  border-radius: 20px 0 0 20px;
+}
+.large-card-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  padding: 25px;
+}
+.large-card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.event-title {
+  font-size: 3rem;
+}
+.event-description {
+  font-size: 1.2rem;
+}
+.event-date {
+  font-size: 2rem;
+}
+.large-card-btns {
+  display: flex;
+}
+.large-card-btns button {
+  font-size: 1.5rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px;
+  margin: 0 25px;
+}
+.purchase-btn {
+  background-color: green;
+  color: antiquewhite;
+}
+.purchase-btn:hover {
+  background-color: rgb(21, 175, 21);
+  cursor: pointer;
+  box-shadow: 0 0 5px green;
+}
+.order-menu-btn {
+  background-color: rgb(146, 14, 14);
+  color: antiquewhite;
+}
+.order-menu-btn:hover {
+  background-color: rgb(218, 57, 57);
+  cursor: pointer;
+  box-shadow: 0 0 5px red;
+}

@@ -1,17 +1,28 @@
 import { Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import "./EventDetailsLayout.css";
 
 const EventDetailsLayout = (props) => {
-  const { eventId, eventTitle, eventDescription, date } = useParams();
+  const { eventTitle, eventDescription, date, encodedEventImage } = useParams();
   return (
     <div className="eventDetailsLayout">
       <h2>Event Details</h2>
-      <p>Event ID {eventId}</p>
-      <p>Event Title {eventTitle}</p>
-      <p>Event Description {eventDescription}</p>
-      <p>Event Date {date}</p>
-      <p>Buy Tickets</p>
-      <p>Order Menu</p>
+      <div className="largeCard">
+        <img className="lgEventCardImg" src={encodedEventImage} alt="" />
+        <div className="large-card-side">
+          <div className="large-card-content">
+            <p className="event-title">{eventTitle}</p>
+            <p className="event-description">
+              Event Description {eventDescription}
+            </p>
+            <p className="event-date">Event Date {date}</p>
+          </div>
+          <div className="large-card-btns">
+            <button className="purchase-btn">Buy Tickets</button>
+            <button className="order-menu-btn">Order Menu</button>
+          </div>
+        </div>
+      </div>
       <Outlet />
     </div>
   );

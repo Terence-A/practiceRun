@@ -5,9 +5,10 @@ const EventsCard = (props) => {
   const navigate = useNavigate();
   const puchaseHandler = () => {
     console.log(props.eventId, props.eventTitle);
+    const encodedEventImage = encodeURIComponent(props.eventImage);
     // navigate("/eventDetails");
     navigate(
-      `/eventDetails/${props.eventId}/${props.eventTitle}/${props.eventDescription}/${props.date}`
+      `/eventDetails/${props.eventId}/${props.eventTitle}/${props.eventDescription}/${props.date}/${encodedEventImage}`
     );
   };
 
