@@ -1,6 +1,7 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import myCart from "../../images/emptyCart.png";
 
 const NavBar = () => {
   const location = useLocation();
@@ -38,6 +39,11 @@ const NavBar = () => {
         </li>
       </ul>
       <ul className="contact-li">
+        <li>
+          <Link to="/myCart">
+            <img src={myCart} alt="" />
+          </Link>
+        </li>
         <li>
           <Link to="/signIn">
             <p className="main-nav-btn">Sign In</p>

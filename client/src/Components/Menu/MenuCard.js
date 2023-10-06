@@ -13,7 +13,8 @@ const MenuCard = (props) => {
         <div className="menu-bottom">
           <h3>{props.title}</h3>
           <p>{props.description}</p>
-          <button onClick={orderHandler}>Order</button>
+          <p>${props.price}</p>
+          <button onClick={orderHandler}>Add to Cart</button>
         </div>
       </div>
     </div>

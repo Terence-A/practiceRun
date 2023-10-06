@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 100px;
+  box-shadow: 0 4px 8px black;
 }
 .nav-list {
   display: flex;
@@ -37,5 +38,11 @@
   box-shadow: 0 0 5px 0 #282888;
 }
 .contact-li {
+  display: flex;
   list-style: none;
+  align-items: center;
+}
+.contact-li img {
+  margin-right: 50px;
+  width: 50px;
 }
